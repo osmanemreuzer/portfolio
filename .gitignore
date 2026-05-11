@@ -1,0 +1,10 @@
+# Database connection (contains credentials)
+db/connection.php
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
