@@ -68,6 +68,11 @@ $conn->close();
           </div>
           <div class="message-subject"><strong><?= htmlspecialchars($c['subject']) ?></strong></div>
           <div class="message-body"><?= nl2br(htmlspecialchars($c['message'])) ?></div>
+          <div style="margin-top:14px;text-align:right;">
+            <a href="delete_message.php?id=<?= $c['id'] ?>"
+               class="btn-delete"
+               onclick="return confirm('Delete this message?')">Delete</a>
+          </div>
         </div>
         <?php endforeach; ?>
       </div>
